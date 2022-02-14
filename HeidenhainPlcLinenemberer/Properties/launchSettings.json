@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "HeidenhainPlcLinenemberer": {
+      "commandName": "Project",
+      "commandLineArgs": "\"C:\\Users\\petrikoskinen\\OneDrive - JK-Kone Oy\\Tiedostot\\plcLagun\\AXES.plc\""
+    }
+  }
+}
