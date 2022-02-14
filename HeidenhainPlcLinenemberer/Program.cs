@@ -33,13 +33,15 @@ while ((s = sr.ReadLine()) != null)
     sb.Append(lineOutput);
 }
 
-if (File.Exists(filename + ".numbered"))
+const string suffix = ".renumbered";
+
+if (File.Exists(filename + suffix))
 {
-    File.Delete(filename + ".numbered");
+    File.Delete(filename + suffix);
 }
 sr.Close();
 Console.WriteLine();
-var sw = File.AppendText(filename + ".numbered");
+var sw = File.AppendText(filename + suffix);
 sw.Write(sb);
 
 sw.Close();
